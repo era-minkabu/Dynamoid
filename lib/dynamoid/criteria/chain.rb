@@ -161,6 +161,8 @@ module Dynamoid #:nodoc:
           { :range_lte => val.to_f }
         when 'begins_with'
           { :range_begins_with => val }
+        when 'between'
+          { :range_between => val }
         end
       end
 
